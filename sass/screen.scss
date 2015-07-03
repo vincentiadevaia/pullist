@@ -35,21 +35,52 @@ $desktop-width: 720px;
 $primary-color: #444;
 $text-align:left;
 
-a:link {color: #fefefe; opacity: 0.8; text-decoration: none;}
-a:visited {color:#fefefe; opacity: 0.8; text-decoration: none;} 
-a:hover {color:#fefefe; opacity: 0.4; text-decoration: none;}   
-a:active {color:#fefefe; opacity: 0.8; text-decoration: none;}
+.navLink a:link {color: #fff; text-decoration: none;}
+.navLink a:visited {color:#fff; text-decoration: none;} 
+.navLink a:hover {color:#999; text-decoration: none;}   
+.navLink a:active {color:#fff; text-decoration: none;}
 
+.archive {
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #222;
+  color: #fff;
+  overflow-y: auto;
+}
 body {
   color: $primary-color;
   text-align: $text-align;
   background-color: #fff;
 }
+.curator {
+  color: #666;
+  font-family: "proxima-nova-alt",sans-serif;
+  font-size: 0.875em; 
+  font-style: italic;
+  font-weight: 400;
+  padding-bottom: 5%;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.def {
+  margin-top: 10px;
+  color: #999;
+  display: block;
+  font-family: "proxima-nova-alt",sans-serif;
+  font-size: .8em;
+  font-weight: 400;
+  }       
 .divider {
   background: #bfbfbf;
   height: 1px;
   margin: auto;
-  margin-bottom: 4.6%;
+  margin-bottom: 5%;
   text-align: center;
   width: 60px;
 }
@@ -83,62 +114,110 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 .image {
-  background: #999;
-  float: left;
-  height: 96%;
-  margin: 2%;
-  width: 96%;
+  background: #666;
+  margin: auto;
+  margin-bottom: 4%;
+  text-align: center;
+  width: 100%;
 }
-.imagewrapper {
-  // background: #666;
-  float: left;
-  height:100vh;
-  width: 50%;
+.links {
+  columns: 4 150px;
+  padding-top: 14%;
+  padding-bottom: 7%;
 }
 .nav {
-  padding-top: 1%;
-  padding-bottom: 16%;
+  margin-top: 6%;
+  margin-bottom: 8%;
+  max-width: 640px;
 }
-.p {
-  display: block;
-  font-family: "proxima-nova-alt",sans-serif;
-  font-size: 1.2em;
-  font-weight: 400;
-  line-height: 1.625em;
-  margin: auto;
-  padding-bottom: 2%;
-  width: 84%;
+.navDark {
+  margin-bottom: 6%;
+  max-width: 640px;
 }
-.sitewrapper {
-  width: 100%;
-} 
-::selection {
-  background: #ddd;
-}
-::-moz-selection {
-  background: #ddd;
-}
-.text {
-  // background: #999;
-  float: left;
-  height: 96%;
-  margin: 2%;
-  width: 96%;
-}
-.textwrapper {
-  // background: #666;
-  float: left;
-  height:100vh;
-  width: 50%;
-}
-.title {
+.navName {
   color: #FF5B60;
+  float: left;
+  display: block;
   font-family: "proxima-nova-alt",sans-serif;
   font-size: 1.25em; 
   font-weight: 700;
   text-align: left;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: subpixel-antialiased;
+}
+.navArchive {
+  border-bottom: 4px solid transparent;
+  color: #444;
+  cursor: pointer;
+  display: block;
+  float: right;
+  font-family: "proxima-nova-alt",sans-serif;
+  font-size: 1em; 
+  font-weight: 600;
+  margin-top: 4px;
+  padding-bottom: 5px;
+  text-align: left;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.navArchive:hover{
+    border-bottom: 4px solid #444;
+}
+.navClose {
+  border-bottom: 4px solid transparent;
+  color: #fefefe;
+  cursor: pointer;
+  display: block;
+  float: right;
+  font-family: "proxima-nova-alt",sans-serif;
+  font-size: 1em; 
+  font-weight: 600;
+  margin-top: 4px;
+  padding-bottom: 5px;
+  text-align: left;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+}.navClose:hover {
+    border-bottom: 4px solid #fefefe;
+}
+.navLink {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.2em; 
+  font-weight: 700;
+  padding-bottom: 5%;
+  text-align: left;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.nav:after { content: ""; display: table; clear: both; }
+.noscroll {
+
+}
+.post {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+.p {
+  color: #555;
+  display: block;
+  font-family: "proxima-nova-alt",sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.625em;
+  padding-bottom: 2%;
+}
+.sitewrapper {
+  margin: auto;
+  max-width: 640px;
+} 
+::selection {
+  background: #ddd;
+}
+::-moz-selection {
+  background: #ddd;
 }
 
 

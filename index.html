@@ -3,36 +3,90 @@
 <html>
 
 <head>
+	<title>Pullist</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+
+	$(document).ready(function(){
+
+	$(".archive").hide();
+
+		$(".navArchive").click(function() {
+		        $(".archive" ).fadeIn(600);
+		        $("body");
+		});
+
+		$(".navClose").click(function() {
+		        $( ".archive" ).fadeOut(600);
+		        $("body");
+		});
+
+		$(".navLink").click(function() {
+		        $( ".archive" ).fadeOut(600);
+		        $("body");
+		});
+
+	});
+
+	</script>
 	<script type="text/javascript" src="//use.typekit.net/ibj0nlu.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
-	<title>Pullist</title>
 	<Link rel="icon" type="image/png" href="favicon.png">
 	<meta name="keywords" content="design, ux, ui, vondoom, vincent iadevaia">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
 	<link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>	
+
+	<div class="archive">
+		<div class="sitewrapper">
+			<nav class="navDark">
+				<div class="navName">Archive</div>
+				<div class="navClose">Close</div>
+			</nav>
+
+			<ul class="links">
+				<li class="navLink"><a href="#heck">January 2014</a><p class="def">Curated by Dylan Todd</p></li>
+				<li class="navLink"><a href="#giants">October 2013</a><p class="def">Curated by Joe Keatinge</p></li>
+			</ul>	
+		</div>		
+	</div>	
+
 	<div class="sitewrapper">
-		<div class="imagewrapper">
-			<div class="image"></div>
+
+		<nav class="nav">
+			<div class="navName">Pullist</div>
+			<div class="navArchive">Archive</div>
+		</nav>
+		<div class="post" id="heck">
+			<div class="h3">January 2014</div>	
+			<div class="h1">Heck</div>
+			<div class="h2">Zander Cannon</div>	
+			<div class="divider"></div>	
+			<div class="curator">Curated by Dylan Todd</div>	
+			<img src="images/heck.png" class="image"></img>
+			<p class="p">
+					The high concept is this: Hector Hammarskjold (who bears more than a passing resemblance to pulp hero Doc Savage) found a portal to Hell in his dead dad's basement and, being a savvy businessman with a reckless streak, goes about starting a business to travel to the land of the dead on the behalf of families of the recently deceased. You know, to help settle inheritance disputes, help families get closure; that sort of thing. That's the setup, but it's not what Heck is about. Zander Cannon's underworld epic is about regret and friendship and betrayal and love and sacrifice. It's haunting, funny, smart and amazingly illustrated. It's a Heck of a ride oh man I am sorry that was terrible please don't leave I apologize...
+			</p>
 		</div>	
-		<div class="textwrapper">
-			<div class="text">
-				<nav class="nav">
-					<div class="title">Pullist</div>
-				</nav>
-				<div class="h3">May 2015</div>	
-				<div class="h1">The New Ghost</div>
-				<div class="h2">Robert Hunter</div>	
-				<div class="divider"></div>
-				<p class="p">
-					Lorem ipsum dolor sit amet, sea nostrud nostrum cu, prodesset sententiae has in. Cu mel putant placerat, integre similique posidonium pri ea, sit nisl modus ex. An mei dolorum referrentur. Est eius mollis disputando eu. Nec cu aliquip virtute, legimus contentiones at has, mollis dolores honestatis in sea.
-				</p>
-				<p class="p">	
-					Cibo appetere sed et. Tale tibique disputando an nam, nec in sonet tantas civibus. Eu sed possit scripserit. Ius te quot salutatus neglegentur, sed an saepe dicam option. Volutpat hendrerit honestatis ius ne, ad facete graecis vix, ut falli latine labores quo.
-				</p>	
-			</div>
+		<div class="post" id="ikillgiants">
+			<div class="h3">October 2013</div>	
+			<div class="h1">I Kill Giants</div>
+			<div class="h2">Joe Kelly & J.M. Ken Niimura</div>	
+			<div class="divider"></div>	
+			<div class="curator">Curated by Joe Keatinge</div>	
+			<img src="images/giants.jpg" class="image"></img>
+			<p class="p">
+					Whenever I'm asked by someone new to the medium what comic book they should read as an intro, I Kill Giants is always my first pick for a number of reasons.
+			</p>
+			<p class="p">		
+					I feel a lot of the general go-tos for people's first comic can be a bit more alienating than a die hard comic book reader realizes. Watchmens's fantastic and while I know people who got into comics through it, I do feel it's generally a bit much to take on for the first time. Furthermore, I feel the collaboration of Niimura and Kelly illustrates why I love collaboration through comics so damn much. They are two people of extremely different backgrounds, generally different styles, coming together to create something that wouldn't exist on Earth without both of them existing at the same time, synthesizing together to create this work.
+			</p>
+			<p class="p">			
+					More specifically, Barbara Thorson's emotional journey is also one any person who has ever known love and loss can relate to -- which I'm fairly certain is any person on Earth. Her actual journey is consists of equal parts wonder, horror, heartbreak, inspiration. It's a great embodiment of the mechanics of comics, showing the infinite range of emotions and possibilities one can convey with the medium. Furthermore, I feel I KILL GIANTS is one of the most beautiful testaments to human existence I've ever read in any format. That being said, I don't see it talked about enough, so it's a true honor to be able to share it with everyone on Pulllist.
+			</p>
 		</div>	
 	</div>	
 </body>
